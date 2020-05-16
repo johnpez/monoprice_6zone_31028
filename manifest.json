@@ -1,0 +1,10 @@
+{
+  "domain": "monoprice_6zone_31028",
+  "name": "Monoprice 6Zone 31028 Amplifier",
+  "documentation": "https://www.home-assistant.io/integrations/monoprice",
+  "requirements": [
+    "git+https://github.com/johnpez/pymonoprice_6zone_31028.git@master#pymonoprice_6zone_31028==0.5"
+  ],
+  "codeowners": ["@jpez"],
+  "config_flow": true
+}
