@@ -1,7 +1,7 @@
 # monoprice_6zone_31028
 Custom Home Assistant component for the Monoprice 6-zone Amplifer (Product ID 31028)
 
-###Use at your own risk
+### Use at your own risk
 
 This is a rough clone of the monoprice component in Home Assistant core. This is the bare minimum. I would like to finish it and get it added to core, but it's not there yet. No testing has been configured, and the config flow is missing labels on fields, there are a few other labeling type issues which I couldn't hurriedly reverse-engineer. But, it appears to be working after light testing. Fixing the remaining issues is probably stupidly easy, but it isn't at the top of my current list of chores.
 
