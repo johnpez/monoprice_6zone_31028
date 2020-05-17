@@ -70,7 +70,7 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
             MonopriceZone(monoprice, sources, config_entry.entry_id, zone_id)
         )
 
-    async_add_entities(entities, True)
+    async_add_entities(entities, False)
 
     platform = entity_platform.current_platform.get()
 
@@ -150,11 +150,6 @@ class MonopriceZone(MediaPlayerDevice):
             self._source = self._source_id_name[idx]
         else:
             self._source = None
-
-    @property
-    def entity_registry_enabled_default(self):
-        """Return if the entity should be enabled when first added to the entity registry."""
-        return self._zone_id < 20
 
     @property
     def device_info(self):
